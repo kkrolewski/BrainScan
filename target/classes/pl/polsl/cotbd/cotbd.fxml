@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="2000" maxWidth="600" minHeight="2000" minWidth="600" prefHeight="2000" prefWidth="600" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.polsl.cotbd.AppController">
+    <children>
+        <ImageView fx:id="imageView_1" fitHeight="400.0" fitWidth="300.0" layoutX="50.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+        </ImageView>
+        <ImageView fx:id="imageView_2" fitHeight="600.0" fitWidth="450.0" layoutX="500.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+        </ImageView>
+        <ImageView fx:id="imageView_3" fitHeight="600.0" fitWidth="450.0" layoutX="500.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" >
+        </ImageView>
+        <Label fx:id="imageView_2Label" text ="No Image loaded" minHeight="50" minWidth="200" layoutX="530.0" layoutY="120.0"/>
+        <Label fx:id="imageView_3Label" text ="No Image loaded" minHeight="50" minWidth="200" layoutX="530.0" layoutY="365.0"/>
+        <Label fx:id="imageView_1Label" text ="No Image loaded" minHeight="50" minWidth="200" layoutX="105.0" layoutY="250.0"/>
+        <Slider layoutX="125" layoutY="400" fx:id="xDim_slider" minWidth="100" disable="true" value="50"/>
+        <Slider fx:id="yDim_slider" layoutX="420.0" layoutY="80.0" minWidth="100"  disable="true" orientation="VERTICAL" value="50"/>
+        <Slider fx:id="zDim_slider" layoutX="420.0" layoutY="325" minWidth="100" disable="true" orientation="VERTICAL"  value="50"/>
+        <Button  fx:id="openFile_button" layoutX="170.0" layoutY="500" minWidth="200" minHeight="40" mnemonicParsing="false" onAction="#openFile_onPressed" text="Open"/>
+        <Button fx:id="saveFile_button" layoutX="170.0" layoutY="580" minWidth="200" minHeight="40" mnemonicParsing="false" onAction="#saveFile_onPressed" text="Save" disable="true"/>
+        <Button fx:id="adnotation_button" layoutX="600.0" layoutY="560" minWidth="200" minHeight="40" mnemonicParsing="false" onAction="#saveFile_onPressed" text="Make addnotation" disable="true"/>
+    </children>
+</Pane>
